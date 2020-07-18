@@ -2,8 +2,8 @@
   "name": "vnc-snapshot",
   "version": "0.5.3",
   "description": "NodeJS VNC snapshot tool",
-  "main": "index.js",
   "postinstall": "node -e \"require('fs').stat('lib', function (e, s) { process.exit(e || !s.isDirectory() ? 1 : 0) })\" || npm run compile",
+  "main": "lib/index.js",
   "scripts": {
     "start": "npm run test:watch",
     "test": "mocha",
